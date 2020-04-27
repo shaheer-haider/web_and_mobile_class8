@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+font-face {
+    font-family: 'Ubuntu';
+    src: url(Ubuntu-R.ttf)
+}
+
+h1 {
+    font-family: 'Ubuntu';
+}
+
+h2 {
+    font-family: 'Ubuntu';
+}
+
+h3 {
+    font-family: 'Comic Neue';
+}
+
+h4 {
+    font-family: 'Comic Neue';
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+}
