@@ -4,6 +4,7 @@
 }
 
 #header-bars {
+    z-index: 9999;
     background-color: #316DC3;
     height: 50px;
     width: 100%;
@@ -44,9 +45,10 @@
 
 #million-para {
     color: white;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
     margin-left: 50px;
     margin-right: 50px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -124,7 +126,7 @@
 .affix {
     top: 0px;
     width: 100%;
-    z-index: 99;
+    z-index: 999;
 }
 
 #saylani-logo {
@@ -139,7 +141,7 @@
 }
 
 #nav-bar-resp {
-    background-color: rgb(141, 141, 141);
+    background-color: white;
 }
 
 #nav-container {
@@ -162,7 +164,7 @@
 #nav-links-ul>li>a {
     text-decoration: none;
     color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular'
 }
 
 #nav-links>ul>li>a {
@@ -170,16 +172,153 @@
 }
 
 #nav-links>ul>li {
-    transition-property: background-color 1s ease-out;
     margin: auto;
     min-width: 80px;
     text-align: center;
     vertical-align: middle;
 }
 
+#nav-links>ul>li>a:hover {
+    color: white;
+}
+
 #nav-links>ul>li:hover, #home-li {
     background-color: #316DC3;
-    color: white;
-    padding: 10px;
-    border-radius: 25% 25%;
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 25px;
+}
+
+#nav-links {
+    margin-top: 8px;
+}
+
+.about-li {
+    display: block;
+    position: relative;
+}
+
+.about-dropdown {
+    margin-top: 8px;
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    background-color: white;
+    text-align: left;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.5s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.1s, transform 0.3s ease-in-out 1s;
+}
+
+.about-dropdown>li:last-of-type{
+    padding-bottom: 10px;
+}
+
+.about-dropdown>li{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.about-dropdown>li>a{
+    color: lightslategray;
+}
+
+
+.about-li:hover .about-dropdown {
+    top: auto;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+}
+
+.about-li:hover .about-dropdown>li:first-of-type{
+    margin-top: 18px;
+}
+
+.about-li:hover #some-space-div{
+    display: block;
+}
+
+
+.about-li:hover .about-dropdown>li>a {
+    text-decoration: none;
+}
+
+.about-dropdown>li:first-of-type{
+    border-top: 1px solid rgb(138, 137, 137);
+}
+
+.about-dropdown>li{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.about-dropdown>li:last-of-type{
+    border-bottom: 1px solid rgb(83, 83, 83);
+}
+
+
+
+
+
+
+#donation-dropdown{
+    margin-top: 8px;
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    background-color: white;
+    text-align: left;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    transform: translateY(-2em);
+    z-index: -1;
+    transition: all 0.5s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.1s, transform 0.3s ease-in-out 1s;
+}
+
+#donation-dropdown>li:last-of-type{
+    padding-bottom: 10px;
+}
+
+#donation-dropdown>li{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#donation-dropdown>li>a{
+    color: lightslategray;
+}
+
+
+.about-li:hover #donation-dropdown {
+    top: auto;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+}
+
+.about-li:hover #donation-dropdown>li:first-of-type{
+    margin-top: 18px;
+}
+
+.about-li:hover #some-space-div{
+    display: block;
 }
