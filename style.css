@@ -17,7 +17,7 @@
 
 
 #main-header-container{
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0);
     display: flex;
     height: 55px;
     margin: auto;
@@ -32,7 +32,7 @@
 
 #icons-div{
     width: 200px;
-    border: 1px solid black;
+    padding-left: 50px;
 }
 .social-media-icons{
     margin-left: 15px;
@@ -41,17 +41,77 @@
 #million-para{
     color: white;
     font-family: Helvetica, sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
 }
 
 
 .header-button{
-    width: 80px;
     height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 12px;
     font-family: Helvetica, sans-serif;
+    color: rgb(146, 139, 139);
+    background-color: white;
 }
 
+#icons-div{
+    min-width: 200px;
+}
 
 #header-buttons-div{
     margin-right:30px;
+}
+
+@media only screen and (max-width: 1176px){
+    #header-bar {
+        height: 100px;
+    }
+
+    #header-bar>div{
+        padding-top: 20px;
+    }
+
+    #smit-button{
+        margin-top: 2px;
+    }
+}
+
+@media only screen and (max-width:990px){
+    #smit-button{
+        margin-top: unset;
+    }
+
+    #header-bar>div{
+        padding-top: unset;
+    }
+
+    #header-bar {
+        height: 130px;
+    }
+    
+
+    #main-header-container, #million-para-div, #icons-div{
+        display: block;
+        margin: auto;
+    }
+
+    #header-buttons-div{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    #icons-div{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #million-para{
+        margin: auto 7px auto 7px;
+        padding-bottom: 15px;
+    }
 }
