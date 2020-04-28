@@ -1,26 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
-
-font-face {
-    font-family: 'Ubuntu';
-    src: url(Ubuntu-R.ttf)
+* {
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    font-family: 'Ubuntu';
+#header-bar {
+    background-color: #316DC3;
+    height: 55px;
+    width: 100%;
 }
 
-h2 {
-    font-family: 'Ubuntu';
+.social-media-icons>a>img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
 
-h3 {
-    font-family: 'Comic Neue';
+
+#main-header-container{
+    border: 1px solid black;
+    display: flex;
+    height: 55px;
+    margin: auto;
+    max-width: 1220px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-h4 {
-    font-family: 'Comic Neue';
+#header-buttons-list>li, .social-media-icons{
+    display: inline;
 }
 
-p {
-    font-family: 'Roboto Slab', serif;
+#icons-div{
+    width: 200px;
+    border: 1px solid black;
+}
+.social-media-icons{
+    margin-left: 15px;
+}
+
+#million-para{
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+
+.header-button{
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+}
+
+
+#header-buttons-div{
+    margin-right:30px;
 }
