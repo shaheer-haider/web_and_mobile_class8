@@ -3,9 +3,9 @@
     padding: 0;
 }
 
-#header-bar {
+#header-bars {
     background-color: #316DC3;
-    height: 55px;
+    height: 50px;
     width: 100%;
 }
 
@@ -15,8 +15,7 @@
     cursor: pointer;
 }
 
-
-#main-header-container{
+#main-header-container {
     border: 1px solid rgba(0, 0, 0, 0);
     display: flex;
     height: 55px;
@@ -26,19 +25,24 @@
     align-items: center;
 }
 
-#header-buttons-list>li, .social-media-icons{
+#header-buttons-list>li, .social-media-icons {
     display: inline;
 }
 
-#icons-div{
+#icons-div {
     width: 200px;
     padding-left: 50px;
 }
-.social-media-icons{
+
+#iconslist {
+    min-width: 200px;
+}
+
+.social-media-icons {
     margin-left: 15px;
 }
 
-#million-para{
+#million-para {
     color: white;
     font-family: Helvetica, sans-serif;
     margin-left: 50px;
@@ -46,8 +50,7 @@
     text-align: center;
 }
 
-
-.header-button{
+.header-button {
     height: 30px;
     padding-left: 10px;
     padding-right: 10px;
@@ -57,61 +60,126 @@
     background-color: white;
 }
 
-#icons-div{
+#icons-div {
     min-width: 200px;
 }
 
-#header-buttons-div{
-    margin-right:30px;
+#header-buttons-div {
+    margin-right: 30px;
 }
 
-@media only screen and (max-width: 1176px){
-    #header-bar {
+@media only screen and (max-width: 1077px) {
+    #header-bars {
         height: 100px;
     }
-
-    #header-bar>div{
+    #header-bars>div {
         padding-top: 20px;
     }
-
-    #smit-button{
+    #smit-button {
         margin-top: 2px;
+    }
+    #header-bars {
+        padding-top: 10px;
     }
 }
 
-@media only screen and (max-width:990px){
-    #smit-button{
+@media only screen and (max-width:990px) {
+    #smit-button {
         margin-top: unset;
     }
-
-    #header-bar>div{
+    #header-bars>div {
         padding-top: unset;
     }
-
-    #header-bar {
+    #header-bars {
         height: 130px;
+        padding-top: unset;
     }
-    
-
-    #main-header-container, #million-para-div, #icons-div{
+    #main-header-container, #million-para-div, #icons-div {
         display: block;
         margin: auto;
     }
-
-    #header-buttons-div{
+    #header-buttons-div {
         display: flex;
         width: 100%;
         margin: auto;
         justify-content: center;
     }
-
-    #icons-div{
+    #icons-div {
         margin-top: 15px;
         margin-bottom: 15px;
+        padding: unset;
     }
-
-    #million-para{
+    #million-para {
         margin: auto 7px auto 7px;
         padding-bottom: 15px;
     }
+}
+
+/*  RESPONSIVE NAV BAR */
+
+/* #nav-bar-resp, #nav-bar-resp>* {
+    box-sizing: border-box;
+} */
+
+.affix {
+    top: 0px;
+    width: 100%;
+    z-index: 99;
+}
+
+#saylani-logo {
+    width: 180px;
+    height: auto;
+}
+
+#img-div>img {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+}
+
+#nav-bar-resp {
+    background-color: rgb(141, 141, 141);
+}
+
+#nav-container {
+    display: flex;
+    margin: auto;
+    height: 70px;
+    max-width: 1220px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-links-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 700px;
+    list-style: none;
+}
+
+#nav-links-ul>li>a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#nav-links>ul>li>a {
+    transition-property: color 1s ease-out;
+}
+
+#nav-links>ul>li {
+    transition-property: background-color 1s ease-out;
+    margin: auto;
+    min-width: 80px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#nav-links>ul>li:hover, #home-li {
+    background-color: #316DC3;
+    color: white;
+    padding: 10px;
+    border-radius: 25% 25%;
 }
