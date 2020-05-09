@@ -996,6 +996,7 @@
     #nav-links-ul{
         min-width: unset;
         margin-right: 0px;
+        display: block;
     }
     #nav-links-ul>li{
         display: inline-block;
