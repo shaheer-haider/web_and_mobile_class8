@@ -102,9 +102,10 @@ body{
 
 #nav-bar-resp {
     background-color: #F7F8FA;
+    z-index: 9999;
 }
 
-/* .sticky {
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
@@ -112,7 +113,7 @@ body{
 
 .sticky+.content {
     padding-top: 60px;
-} */
+}
 
 #nav-container {
     display: flex;
@@ -1059,4 +1060,16 @@ body{
     #useful-links-div {
         padding-top: 20px;
     }
+}
+
+.link-arrow{
+    background-color: black;
+    padding: 15px;
+}
+
+.link-arrow-contain{
+    width: 200px;
+    height: 200px;
+    margin-top: 20%;
+    border-radius: 50%;
 }
