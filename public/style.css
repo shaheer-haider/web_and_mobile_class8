@@ -8,7 +8,6 @@
     background-color: black;
     color: white;
 }
-
 #header-bars {
     z-index: 9999;
     background-color: #316DC3;
@@ -86,16 +85,6 @@
 
 /*  RESPONSIVE NAV BAR */
 
-/* #nav-bar-resp, #nav-bar-resp>* {
-    box-sizing: border-box;
-} */
-
-.affix {
-    top: 0px;
-    width: 100%;
-    z-index: 99999;
-}
-
 #saylani-logo {
     width: 180px;
     height: auto;
@@ -111,6 +100,16 @@
 #nav-bar-resp {
     background-color: #F7F8FA;
 }
+
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+} */
 
 #nav-container {
     display: flex;
@@ -417,7 +416,6 @@
     height: 0px;
     position: absolute;
     height: auto;
-    border: 1px solid black;
     top: 18px;
     left: 5px;
     width: 200px;
@@ -472,7 +470,6 @@
     height: 0px;
     position: absolute;
     height: auto;
-    border: 1px solid black;
     top: 0px;
     left: 5px;
     width: 200px;
@@ -684,7 +681,6 @@
 
 #what-are-main-containter {
     background-color: #F7F8FA;
-    border: 1px solid black;
     width: 100%;
     height: auto;
 }
@@ -839,7 +835,6 @@
     display: block;
     margin: auto;
     max-width: fit-content;
-    border: 1px solid black;
 }
 
 #image-block {
@@ -890,13 +885,13 @@
     height: 50px;
 }
 
-#blue-footer>div{
+#blue-footer>div {
     max-width: 1000px;
     display: block;
     margin: auto;
 }
 
-#blue-footer>div>p{
+#blue-footer>div>p {
     color: white;
     margin-top: 18px;
     margin-left: 50px;
@@ -993,8 +988,18 @@
     }
 }
 
-@media only screen and (max-width:850px){
-    /*  nav bar code */
+@media only screen and (max-width: 850px){
+    #nav-links{
+        display: block;
+        margin: auto;
+    }
+    #nav-links-ul{
+        min-width: unset;
+        margin-right: 0px;
+    }
+    #nav-links-ul>li{
+        display: inline-block;
+    }
 }
 
 @media only screen and (max-width:760px) {
@@ -1047,7 +1052,7 @@
     #simple-under {
         width: 90%;
     }
-    #useful-links-div{
+    #useful-links-div {
         padding-top: 20px;
     }
 }
